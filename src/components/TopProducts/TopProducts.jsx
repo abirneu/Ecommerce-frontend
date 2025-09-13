@@ -29,14 +29,14 @@ const ProductsData = [
 ];
 const TopProducts = ({ handleOrderPopup }) => {
   return (
-    <div>
+    <div id="top-products" >
       <div className="container">
         {/* Header section */}
         <div className="text-left mb-24">
           <p data-aos="fade-up" className="text-sm text-primary">
             Top Rated Products for you
           </p>
-          <h1 data-aos="fade-up" className="text-3xl font-bold">
+          <h1 data-aos="fade-up" className="text-3xl font-bold dark:text-white">
             Best Products
           </h1>
           <p data-aos="fade-up" className="text-xs text-gray-400">
@@ -68,8 +68,8 @@ const TopProducts = ({ handleOrderPopup }) => {
                   <FaStar className="text-yellow-500" />
                   <FaStar className="text-yellow-500" />
                 </div>
-                <h1 className="text-xl font-bold">{data.title}</h1>
-                <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
+                <h1 className="text-xl font-bold dark:text-white">{data.title}</h1>
+                <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2 dark:text-gray-300">
                   {data.description}
                 </p>
                 <button

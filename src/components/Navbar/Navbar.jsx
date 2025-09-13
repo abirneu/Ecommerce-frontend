@@ -37,17 +37,17 @@ const DropdownLinks = [
   {
     id: 1,
     name: "Trending Products",
-    link: "/#",
+    link: "#",
   },
   {
     id: 2,
     name: "Best Selling",
-    link: "/#",
+    link: "/#products",
   },
   {
     id: 3,
     name: "Top Rated",
-    link: "/#",
+    link: "/#top-products",
   },
 ];
 
@@ -60,7 +60,7 @@ const Navbar = ({ handleOrderPopup }) => {
           <div>
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
               <img src={Logo} alt="Logo" className="w-10" />
-              Shopsy
+              MegaBuy
             </a>
           </div>
 

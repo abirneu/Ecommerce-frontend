@@ -52,12 +52,12 @@ const ProductsData =[
 
 const Products = () => {
     return (
-        <div className='mt-14 mb-12'>
+        <div className='mt-14 mb-12 ' id='products'>
             <div className='container mx-auto'>
                 {/* Header Section 3 ta re ek sathe korar jonno ei div */}
                 <div className='text-center mb-10 max-w-[600px] mx-auto'>
                     <p className='text-sm text-primary'>Top Selling Products for you</p>
-                    <h1 className='text-3xl font-bold'>Products</h1>
+                    <h1 className='text-3xl font-bold dark:text-white'>Products</h1>
                     <p className='text-xs text-gray-400'>Lorem ipsum dolor sit amet, 
                         consectetur adipisicing elit. Non, facilis?</p>
                 </div> 
@@ -79,11 +79,11 @@ const Products = () => {
                                 object-cover rounded-md mx-auto'
                                 />
                                 <div>
-                                    <h3 className='font-semibold'>{data.title}</h3>
-                                    <p className='text-sm text-gray-600'>{data.color}</p>
+                                    <h3 className='font-semibold dark:text-white'>{data.title}</h3>
+                                    <p className='text-sm text-gray-600 dark:text-gray-400'>{data.color}</p>
                                     <div className='flex items-center gap-1 justify-center'>
                                         <FaStar className='text-yellow-400'/>
-                                        <span>{data.rating}</span>
+                                        <span className='dark:text-gray-400'>{data.rating}</span>
                                     </div>
                                 </div>
                             </div>

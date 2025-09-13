@@ -30,7 +30,7 @@ const App = () => {
   }, []);
 
   return (
-    <div >
+    <div  >
       <Navbar handleOrderPopup={handleOrderPopup}/>
       <Hero handleOrderPopup={handleOrderPopup}/>
       <Products/>
